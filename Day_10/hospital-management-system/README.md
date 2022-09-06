@@ -59,7 +59,7 @@ curl --location --request POST 'localhost:8081/doctor/save' \
 "appointmentId":"appointap2",
 "patientName":"patient2",
 "doctorName":"doctor1",
-"date":"05/09/2022",
+"date":"06/09/2022",
 "prescription":{
 "prescriptionId":"presap2",
 "appointmentId":"appointap2",
