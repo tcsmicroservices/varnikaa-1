@@ -1,4 +1,4 @@
-package com.ashish.artemis;
+package com.rama.artemis;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

@@ -1,4 +1,4 @@
-package com.ashish.artemis.producer;
+package com.rama.artemis.producer;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -11,10 +11,12 @@ public class ArtemisProducer {
     private static final Logger LOGGER = LoggerFactory.getLogger(ArtemisProducer.class);
     private final JmsTemplate jmsTemplate;
 
+    /*@Value("${jms.queue.destination}")
+    String destinationQueue;*/
     @Value("${jms.queue.destination1}")
-    String destinationQueue1;
+    String destination1Queue;
     @Value("${jms.queue.destination2}")
-    String destinationQueue2;
+    String destination2Queue;
 
     public ArtemisProducer(JmsTemplate jmsTemplate) {
         this.jmsTemplate = jmsTemplate;
@@ -31,8 +33,9 @@ public class ArtemisProducer {
  */
     public void send(String msg) {
         LOGGER.info("Sending Data:");
-        jmsTemplate.convertAndSend(destinationQueue1, msg);
-        jmsTemplate.convertAndSend(destinationQueue2, msg);
+        //jmsTemplate.convertAndSend(destinationQueue, msg);
+        jmsTemplate.convertAndSend(destination1Queue, msg);
+        jmsTemplate.convertAndSend(destination2Queue, msg);
         LOGGER.info("Data Sent:");
     }
 }

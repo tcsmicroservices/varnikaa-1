@@ -1,6 +1,6 @@
-package com.ashish.artemis.controller;
+package com.rama.artemis.controller;
 
-import com.ashish.artemis.producer.ArtemisProducer;
+import com.rama.artemis.producer.ArtemisProducer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
