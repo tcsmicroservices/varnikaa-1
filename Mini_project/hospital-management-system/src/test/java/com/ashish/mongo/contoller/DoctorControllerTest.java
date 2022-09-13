@@ -31,7 +31,7 @@ public class DoctorControllerTest {
     public void getMyAppointments() {
         Appointment appointment = new Appointment();
         appointment.setAppointmentId("appoint1");
-        appointment.setDate("06/09/2022");
+        appointment.setDate("12/09/2022");
         appointment.setPatientName("patient1");
         appointment.setPrescription(new Prescription("presc1","appoint1","desc","patient1","doctor1"));
         appointment.setDoctorName("doctor1");
@@ -52,7 +52,7 @@ public class DoctorControllerTest {
         Appointment mockAppointment = mock(Appointment.class);
         Appointment appointment = new Appointment();
         appointment.setAppointmentId("appoint1");
-        appointment.setDate("06/09/2022");
+        appointment.setDate("12/09/2022");
         appointment.setPatientName("patient1");
         appointment.setPrescription(new Prescription("presc1","appoint1","desc","patient1","doctor1"));
         appointment.setDoctorName("doctor1");
